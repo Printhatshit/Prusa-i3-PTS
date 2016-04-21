@@ -179,9 +179,9 @@
 
 // If you are using a preconfigured hotend then you can use one of the value sets by uncommenting it
 // Ultimaker
-     #define  DEFAULT_Kp 22.2
-    #define  DEFAULT_Ki 1.08
-    #define  DEFAULT_Kd 114
+     #define  DEFAULT_Kp 11.76
+    #define  DEFAULT_Ki 0.43
+    #define  DEFAULT_Kd 80.95
 
 // Makergear
 //    #define  DEFAULT_Kp 7.0
@@ -332,15 +332,15 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 #ifdef ENABLE_AUTO_BED_LEVELING
 
   // these are the positions on the bed to do the probing
-  #define LEFT_PROBE_BED_POSITION 20
-  #define RIGHT_PROBE_BED_POSITION 160  
-    #define BACK_PROBE_BED_POSITION 160
-  #define FRONT_PROBE_BED_POSITION 20
+  #define LEFT_PROBE_BED_POSITION 0
+  #define RIGHT_PROBE_BED_POSITION 145  
+    #define BACK_PROBE_BED_POSITION 180
+  #define FRONT_PROBE_BED_POSITION 40
 
   // these are the offsets to the prob relative to the extruder tip (Hotend - Probe)
   #define X_PROBE_OFFSET_FROM_EXTRUDER -10
   #define Y_PROBE_OFFSET_FROM_EXTRUDER 26
-  #define Z_PROBE_OFFSET_FROM_EXTRUDER -10.5
+  #define Z_PROBE_OFFSET_FROM_EXTRUDER -0
 
   #define Z_RAISE_BEFORE_HOMING 15       // (in mm) Raise Z before homing (G28) for Probe Clearance.
                                         // Be sure you have this distance over your Z_MAX_POS in case
@@ -438,11 +438,11 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 //#define EEPROM_CHITCHAT
 
 // Preheat Constants
-#define PLA_PREHEAT_HOTEND_TEMP 180
+#define PLA_PREHEAT_HOTEND_TEMP 185
 #define PLA_PREHEAT_HPB_TEMP 70
 #define PLA_PREHEAT_FAN_SPEED 255   // Insert Value between 0 and 255
 
-#define ABS_PREHEAT_HOTEND_TEMP 225
+#define ABS_PREHEAT_HOTEND_TEMP 235
 #define ABS_PREHEAT_HPB_TEMP 90
 #define ABS_PREHEAT_FAN_SPEED 255   // Insert Value between 0 and 255
 
